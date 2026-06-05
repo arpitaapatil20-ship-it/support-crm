@@ -4,7 +4,7 @@ import re
 from datetime import datetime, timezone
 from flask import Flask, request, jsonify, render_template, g
 from flask_cors import CORS
-
+from seed import seed_database
 app = Flask(__name__)
 CORS(app)
 
@@ -54,6 +54,13 @@ def init_db():
                 created_at TEXT    NOT NULL
             );
         """)
+
+        count = conn.execute(
+            "SELECT COUNT(*) FROM tickets"
+        ).fetchone()[0]
+
+    if count == 0:
+        seed_database()
 
 def now_iso():
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -268,7 +275,7 @@ def get_stats():
 # Entry point
 # ─────────────────────────────────────────────
 # Initialize database
-init_db
+init_db()
 
 # Entry point
 if __name__ == "__main__":
