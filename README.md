@@ -104,4 +104,9 @@ This approach helped me understand the full-stack development workflow while bui
 
 ## 👩‍💻 Author
 
-Built by **Arpita** as part of the Datastraw Technologies Internship Assessment.
+## 👩‍💻 Author
+
+Built by **Arpita** as a full-stack project to explore customer support workflows and end-to-end web application development.
+
+This project demonstrates backend API development, database design, and frontend UI implementation using Python, Flask, SQLite, HTML, CSS, and JavaScript.
+
