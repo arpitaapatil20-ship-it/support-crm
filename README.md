@@ -101,8 +101,11 @@ This approach helped me understand the full-stack development workflow while bui
 
 
 ---
+## Live Demo
+https://support-crm-d9w1.onrender.com
 
-## 👩‍💻 Author
+## GitHub Repository
+https://github.com/arpitaapatil20-ship-it/support-crm
 
 ## 👩‍💻 Author
 
