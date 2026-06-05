@@ -94,13 +94,12 @@ This approach helped me understand the full-stack development workflow while bui
 ![Dashboard](screenshots/dashboard.png)
 
 ### All Tickets
-![All Tickets](screenshots/tickets.png)
+![All Tickets](screenshots/all_ickets.png)
 
 ### Create Ticket Modal
-![Create Ticket Modal](screenshots/create-modal.png)
+![Create Ticket Modal](screenshots/create_ticket.png)
 
-### Ticket Details
-![Ticket Details](screenshots/details.png)
+
 ---
 
 ## 👩‍💻 Author
