@@ -267,10 +267,16 @@ def get_stats():
 # ─────────────────────────────────────────────
 # Entry point
 # ─────────────────────────────────────────────
+# Initialize database
 init_db()
 
+# Populate sample data only if database is empty
+if get_db().execute("SELECT COUNT(*) FROM tickets").fetchone()[0] == 0:
+    import seed
+
+# Entry point
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     debug = os.environ.get("FLASK_ENV") == "development"
-    print(f"✅  SupportDesk CRM  →  http://localhost:{port}")
+    print(f"🚀 SupportDesk CRM → http://localhost:{port}")
     app.run(host="0.0.0.0", port=port, debug=debug)
