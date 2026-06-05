@@ -94,7 +94,7 @@ This approach helped me understand the full-stack development workflow while bui
 ![Dashboard](screenshots/dashboard.png)
 
 ### All Tickets
-![All Tickets](screenshots/all_ickets.png)
+![All Tickets](screenshots/all_tickets.png)
 
 ### Create Ticket Modal
 ![Create Ticket Modal](screenshots/create_ticket.png)
